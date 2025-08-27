@@ -28,11 +28,7 @@ if exist "%A1%" (
     )
 )
 
-rem --- Ждем 20 секунд перед удалением файлов ---
-timeout /t 20 /nobreak >nul
 
-rem --- Очистка: удаляем ZIP и распакованную папку ---
-if exist "%A2%" del /f /q "%A2%"
-if exist "%A1%" rmdir /s /q "%A1%"
 
 exit
+
